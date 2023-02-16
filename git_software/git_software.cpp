@@ -2,9 +2,16 @@
 //
 
 #include <iostream>
+#include <array>
+#include <vector>
+using namespace std;
+int sum(vector<int> vec) {
+    
+    int sum = 0;
+    for (int i = 0; i < vec.size(); ++i) {
+        sum += vec.at(i);
+    }
 
-int sum(int a, int b) {
-    int sum = a + b;
     return sum;
 }
 
