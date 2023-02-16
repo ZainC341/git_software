@@ -6,6 +6,10 @@
 #include <vector>
 using namespace std;
 
+
+
+
+
 int sum(vector<int> vec) {
     
     int sum = 0;
@@ -15,6 +19,7 @@ int sum(vector<int> vec) {
 
     return sum;
 }
+
 
 int product(vector<int> vec) {
     int product = 0;
@@ -27,6 +32,20 @@ int product(vector<int> vec) {
 
 int main()
 {
+    vector<int> vec;
+    int size = 5;
+    int num, s, p;
+    for (int i = 0; i < size; ++i) {
+        cout << "Input 5 numbers";
+        cin >> num;
+        vec.push_back(num);
+    }
+
+    s = sum(vec);
+    p = product(vec);
+
+    cout << s + " " + p;
+
     std::cout << "Hello World!\n";
 }
 
