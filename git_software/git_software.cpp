@@ -5,6 +5,7 @@
 #include <array>
 #include <vector>
 using namespace std;
+
 int sum(vector<int> vec) {
     
     int sum = 0;
@@ -13,6 +14,15 @@ int sum(vector<int> vec) {
     }
 
     return sum;
+}
+
+int product(vector<int> vec) {
+    int product = 0;
+    for (int i = 0; i < vec.size(); ++i) {
+        product *= vec.at(i);
+    }
+
+    return product;
 }
 
 int main()
