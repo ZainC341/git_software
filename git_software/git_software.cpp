@@ -7,9 +7,6 @@
 using namespace std;
 
 
-
-
-
 int sum(vector<int> vec) {
     
     int sum = 0;
@@ -29,6 +26,18 @@ int product(vector<int> vec) {
 
     return product;
 }
+
+
+vector<int> reverse(vector<int> vec) {
+    vector<int> reverse;
+
+    for (int i = 0; i < vec.size(); ++i) {
+        reverse.push_back(vec[i]);
+    }
+
+    return reverse;
+}
+
 
 int main()
 {
