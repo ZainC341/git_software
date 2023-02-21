@@ -50,6 +50,11 @@ int main()
         vec.push_back(num);
     }
 
+    vector<int> rev = reverse(vec);
+    for (int i = 0; i < rev.size(); ++i) {
+        cout << rev.at(i);
+    }
+
     s = sum(vec);
     p = product(vec);
 
